@@ -141,7 +141,7 @@ int main(void)
 	  break;
 
 	  case READ:
-	       for (int i = 0; i < 5 ; i++) { // Trying to read 50 kB ten times
+	  for (int i = 0; i < 5 ; i++) { // Trying to read 50 kB ten times
 		   rres = f_gets((TCHAR*)readBuf, READ_BF_SIZE, &fil);
 		   if(rres != 0) {
 			   if (LoRa_Protocol(readBuf) != HAL_OK) break; //Send 50 kB to LoRa modem
