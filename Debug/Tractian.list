@@ -219,7 +219,7 @@ int main(void)
  80002b2:	e04f      	b.n	8000354 <main+0x180>
 
 	  case READ:
-	       for (int i = 0; i < 5 ; i++) { // Trying to read 50 kB ten times
+	  for (int i = 0; i < 5 ; i++) { // Trying to read 50 kB ten times
  80002b4:	2300      	movs	r3, #0
  80002b6:	f507 4247 	add.w	r2, r7, #50944	; 0xc700
  80002ba:	f102 02bc 	add.w	r2, r2, #188	; 0xbc
@@ -250,7 +250,7 @@ int main(void)
  80002fe:	4603      	mov	r3, r0
  8000300:	2b00      	cmp	r3, #0
  8000302:	d114      	bne.n	800032e <main+0x15a>
-	       for (int i = 0; i < 5 ; i++) { // Trying to read 50 kB ten times
+	  for (int i = 0; i < 5 ; i++) { // Trying to read 50 kB ten times
  8000304:	f507 4347 	add.w	r3, r7, #50944	; 0xc700
  8000308:	f103 03bc 	add.w	r3, r3, #188	; 0xbc
  800030c:	681b      	ldr	r3, [r3, #0]
