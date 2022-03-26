@@ -176,7 +176,7 @@ int main(void)
 
 HAL_StatusTypeDef LoRa_Protocol(uint8_t *pData)
 {
- // Mount the data in the frame protocol and send it to LoRa modem
+ // TODO
 
 return HAL_UART_Transmit(&huart3, (uint8_t*)pData, READ_BF_SIZE, 100);
 }
